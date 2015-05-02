@@ -12,8 +12,8 @@ usage :
 		vertical aspects	: 3-4, 2-3, 3-5, 9-16, 1-3
 
 example :
-<div class="aspectratio-container 4-3 fit-width">
-	<div class="aspectratio-content">
-		<!--content-->
-	</div>
-</div>
+[div class="aspectratio-container 4-3 fit-width"]
+	[div class="aspectratio-content"]
+		[!--content--]
+	[/div]
+[/div]
