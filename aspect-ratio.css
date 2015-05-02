@@ -4,14 +4,14 @@
 
 	usage :
 		container class : 
-			aspectratio-container aspect [fit type]
+			aspectratio-container-aspect [fit type]
 		available aspects :
 			square 				: 1-1
 			horisontal aspects	: 4-3, 3-2, 5-3, 16-9, 3-1
 			vertical aspects	: 3-4, 2-3, 3-5, 9-16, 1-3
 
 	example :
-	<div class="aspectratio-container 4-3 fit-width">
+	<div class="aspectratio-container-4-3 fit-width">
 		<div class="aspectratio-content">
 			content
 		</div>
@@ -32,49 +32,68 @@
 	width: auto;
 }
 
+
 /* square aspect */
-.aspectratio-container.1-1:after{
+.aspectratio-container-1-1::after{
 	padding-top: 100%;
-}
-
-/* horizontal aspects */
-.aspectratio-container.4-3:after{
-	padding-top: 75%;
-}
-.aspectratio-container.3-2:after{
-	padding-top: 66.6666667%;
-}
-.aspectratio-container.5-3:after{
-	padding-top: 60%;
-}
-.aspectratio-container.16-9:after{
-	padding-top: 56.25%;
-}
-.aspectratio-container.3-1:after{
-	padding-top: 33.3333333%;
-}
-
-/* vertical aspects */
-.aspectratio-container.3-4:after{
-	padding-top: 133.3333333%;
-}
-.aspectratio-container.2-3:after{
-	padding-top: 150%;
-}
-.aspectratio-container.3-5:after{
-	padding-top: 166.6666667%;
-}
-.aspectratio-container.9-16:after{
-	padding-top: 177.7777778%;
-}
-.aspectratio-container.1-3:after{
-	padding-top: 300%;
-}
-
-.aspectratio-container:after {
 	display: block;
 	content: '';
 }
+
+/* horizontal aspects */
+.aspectratio-container-4-3::after{
+	padding-top: 75%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-3-2::after{
+	padding-top: 66.6666667%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-5-3::after{
+	padding-top: 60%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-16-9::after{
+	padding-top: 56.25%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-3-1::after{
+	padding-top: 33.3333333%;
+	display: block;
+	content: '';
+}
+
+/* vertical aspects */
+.aspectratio-container-3-4::after{
+	padding-top: 133.3333333%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-2-3::after{
+	padding-top: 150%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-3-5::after{
+	padding-top: 166.6666667%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-9-16::after{
+	padding-top: 177.7777778%;
+	display: block;
+	content: '';
+}
+.aspectratio-container-1-3::after{
+	padding-top: 300%;
+	display: block;
+	content: '';
+}
+
 .aspectratio-content{
 	position: absolute;
 	top: 0;
